@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* color: white; */
+}
+
+
+/* fonts */
+
+h1{
+    font-size: 3.125em;
+}
+h2{
+    /* font-size: 1.8em; */
+    font-weight: 100;
+}
+
+
+
+
+header{
+    height: 100vh;
+    padding: 0 4%;
+    background-image: url("./images/topimage.jpeg");
+    display: grid;
+    place-items: center;
+    color: white;
+}
+
+.headerTint{
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+nav{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLeft h2{
+    color: red;
+}
+
+.navRight button{
+    padding: 0.75em 1.25em;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content{
+    text-align: center;
+}
+
+.content h2{
+    margin: 1.25em 0;
+}
+
+.inputButton{
+    margin-top: 0.25em;
+    padding: 3.57em 16%;
+    display: flex;
+}
+.email{
+    flex-basis: 80.5%;
+}
+.emailButton{
+    flex-basis: 19.5%;
+}
+
+.inputButton .email input{
+    font-size: 0.9375em;
+    padding: 0 2.5em;
+    height: 4em;
+    width: 100%;
+}
+
+.getStarted{
+    padding: 0 2.5em;
+    height: 4em;
+    background-color: red;
+    color: white;
+    font-size: 0.9375em;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+.container{
+    padding: 0 4%;
+    background-color: black;
+    color: white;
+}
+
+.container img{
+    height: 80%;
+}
+
+.firstSectionRight, .secondSectionLeft, .fourthSectionLeft{
+    display: grid;
+    place-items: center;
+}
+
+
+
+.firstSection{
+    display: flex;
+    justify-content: space-between;
+    padding: 3.57em 0;
+    border-bottom: 0.25em solid grey;
+}
+.firstSectionLeft{
+    display: grid;
+    place-items: center;
+}
+
+
+.secondSection{
+    border-bottom: 0.25em solid grey;
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 3.57em 0;
+}
+.secondSectionRight{
+    display: grid;
+    place-items: center;
+}
+
+
+.thirdSection{
+    padding: 6em 0;
+    border-bottom: 0.25em solid grey;
+}
+
+.fourthSection{
+    display: flex;
+    justify-content: space-between;
+    padding: 3.57em 0;
+    border-bottom: 0.25em solid grey;
+}
+.fourthSectionRight{
+    display: grid;
+    place-items: center;
+}
+
+
+
+
+
+.frequentlyAskedQuestions{
+    padding: 3.57em 0;
+    text-align: center;
+    border-bottom: 0.25em solid grey;
+}
+
+.section{
+    margin: 4em 0 6em 0;
+    padding: 0 16%;
+    display: flex;
+    flex-direction: column;
+}
+.special{
+    border-top: 0.5px solid black;
+    padding-top: 2em;
+}
+.faq{
+    margin: 1em 0;
+    padding-bottom: 1rem;
+    border-bottom: 0.5px solid white;
+    cursor: pointer;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25em;
+}
+.question h3{
+    font-size: 1.25em;
+    font-weight: 20;
+}
+.answer{
+    /* width: 50%; */
+    text-align: left;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s ease;
+}
+.answer p{
+    padding: 1.5625em 0;
+    line-height: 1.56em;
+    font-size: 0.9375em;
+}
+.faq.active .answer{
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+.faq.active svg{
+    transform: rotate(180deg);
+}
+svg{
+    transition: transform .5s ease-in;
+}
+
+@keyframes fade{
+
+    /* Netflix website cloned/redsigned by JOSHUA MAWUDEM GAKPETOR of BBnS & big. jgm9940@gmail.com || bbns.big@gmail.com */
+
+    /* CSS for netflix clone website */
+
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    /* Netflix website cloned/redsigned by JOSHUA MAWUDEM GAKPETOR of BBnS & big. jgm9940@gmail.com || bbns.big@gmail.com */
+
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+.faqBottom{
+    padding: 3.57em 16%;
+}
+
+
+
+
+
+
+footer{
+    padding: 3.57em 16%;
+    background-color: black;
+    color: grey;
+}
+
+ul{
+    list-style: none;
+}
+
+.footerNav{
+    margin: 2.5em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerTop{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.footerTop ul{
+    flex-basis: 50%;
+}
+ul li{
+    margin-bottom: 0.9375em;
+}
+
+.footerBottom{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.footerBottom ul{
+    flex-basis: 50%;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 949px) and (min-width: 0px){
+    
+    /* fonts */
+    h1{
+        font-size: 2.5em;
+    }
+
+    h2{
+        font-size: 1.3em;
+    }
+
+
+    .inputButton{
+        display: block;
+    }
+
+    .getStarted{
+        padding: 0 2.5em;
+        height: 4em;
+        background-color: red;
+        color: white;
+        font-size: 0.75em;
+        border: none;
+        cursor: pointer;
+    }
+
+
+
+    .container{
+        text-align: center;
+    }
+
+    .firstSection, .secondSection, .fourthSection{
+        display: block;
+    }
+
+
+    .frequentlyAskedQuestions{
+        padding: 3.57em 4%;
+    }
+
+    .section{
+        margin: 4em 0 6em 0;
+        padding: 0 4%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .emailButton{
+        margin: 1.25em 0;
+    }
+
+    .faqBottom{
+        padding: 3.57em 4%;
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 549px) and (min-width: 0px){
+
+    /* Netflix website cloned/redsigned by JOSHUA MAWUDEM GAKPETOR of BBnS & big. jgm9940@gmail.com || bbns.big@gmail.com */
+
+    /* fonts */
+    h1{
+        font-size: 1.4em;
+    }
+
+    h2{
+        font-size: 0.9375em;
+    }
+
+    .inputButton{
+        padding: 0 0%;
+    }
+
+    .container{
+        padding: 0 4%;
+        background-color: black;
+        color: white;
+    }
+    
+    .container img{
+        height: 50%;
+    }
+
+    .frequentlyAskedQuestions{
+        padding: 3.57em 0%;
+    }
+
+    .faqBottom{
+        padding: 3.57em 0%;
+    }
+}
+
+
+
+
+
+/* MEDIA QUERIES FOR FOOTER */
+
+@media only screen and (max-width: 844px) and (min-width: 0px){
+    .footerTop, .footerBottom{
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 384px) and (min-width: 0px){
+    svg{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 337px) and (min-width: 0px){
+    .question h3{
+        font-size: 0.9375em;
+    }
+
+    .container img{
+        height: 30%;
+    }
+}
